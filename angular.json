@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "practicaParcialAlbum"
+    }
+  },
+  "defaultProject": "practicaParcialAlbum",
+  "cli": {
+    "analytics": "9848fdbb-024b-4470-b564-344999a67599"
+  }
 }

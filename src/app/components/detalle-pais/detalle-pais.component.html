@@ -1,0 +1,25 @@
+<div *ngIf="show">
+  <h3>Detalle:</h3>
+  <div>Nombre Pais:{{ country.name }}</div>
+  <div>
+    Codigo Pais:<input [disabled]="!country.isEditing" [(ngModel)]="code" />
+  </div>
+  <div>
+    Capital:
+    <input
+      [disabled]="!country.isEditing"
+      [(ngModel)]="capital"
+      value="{{ capital }}"
+    />
+  </div>
+  <p>
+    <button
+      type="button"
+      [disabled]="!country.isEditing"
+      (click)="guardarPais()"
+    >
+      Guardar
+    </button>
+    <button type="button" (click)="cancelar()">Cancelar</button>
+  </p>
+</div>

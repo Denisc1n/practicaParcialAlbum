@@ -9,7 +9,7 @@ import { Pais } from '../classes/pais';
   providedIn: 'root',
 })
 export class PaisService {
-  private countriesUrl = 'http://restcountries.eu/rest/v2';
+  private countriesUrl = 'https://restcountries.eu/rest/v2';
 
   private httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
